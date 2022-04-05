@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>hotel-fortune bootstrap Design website | Home :: w3layouts</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800'
+		rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+	<!--header starts-->
+	<div class="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" /></a>
+					<div class="clearfix"></div>
+				</div>
+				<span class="menu"> </span>
+				<div class="m-clear"></div>
+				<div class="top-menu">
+					<ul>
+						<li><a class="scroll" href="index.html">START</a></li>
+						<li><a class="scroll" href="facilities.html">FACILITIES</a></li>
+						<li><a class="scroll" href="restaurant.html">RESTAURANT</a></li>
+						<li class="active"><a href="conference.html">CONFERENCE</a></li>
+						<li><a class="scroll" href="booking.html">BOOKING</a></li>
+						<li><a class="scroll" href="contact.html">CONTACT US</a></li>
+						<div class="clearfix"></div>
+					</ul>
+					<script>
+						$("span.menu").click(function () {
+							$(".top-menu ul").slideToggle(200);
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---->
+	<div class="confer">
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+				$("#conference-slider").responsiveSlides({
+					auto: true,
+					manualControls: '#slider3-pager',
+				});
+			});
+		</script>
+		<div class="container">
+			<h2><span>Chi Tiết Căn Hộ</span></h2>
+			<div class="conference-slider">
+				<!-- Slideshow 3 -->
+				<ul class="conference-rslide" id="conference-slider">
+					<li><img src="images/c1.jpg" alt=""></li>
+					<li><img src="images/c2.jpg" alt=""></li>
+					<li><img src="images/c3.jpg" alt=""></li>
+					<li><img src="images/c4.jpg" alt=""></li>
+					<li><img src="images/c5.jpg" alt=""></li>
+					<li><img src="images/c6.jpg" alt=""></li>
+				</ul>
+				<!-- Slideshow 3 Pager -->
+				<ul id="slider3-pager">
+					<li><a href="#"><img src="images/c11.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/c22.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/c33.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/c44.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/c55.jpg" alt=""></a></li>
+					<li><a href="#"><img src="images/c66.jpg" alt=""></a></li>
+				</ul>
+			</div>
+			<h4>Căn hộ Masteri ban công hướng Tây, đầy đủ nội thất, 2 phòng ngủ 45m2 giá tốt</h4>
+			<p>ĐƯỜNG: HQV</p>
+			<p>DIỆN TÍCH: 100m2</p>
+			<p>SỐ TẦNG: 5</p>
+			<p>SỐ PHÒNG: 5</p>
+			<p>GIÁ: 1 tỷ</p>
+		</div>
+	</div>
+	</div>
+	<!---->
+</body>
+
+</html>
